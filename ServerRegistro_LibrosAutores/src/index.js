@@ -10,7 +10,7 @@ import router  from "./routes/services.js";
 const expressApp = createExpressServer();
 
 //connecting to db
-mongoose.connect('mongodb://191.156.144.23/parcial_Registro_LibrosAutores')
+mongoose.connect('mongodb+srv://christian88:a123@cluster0.23ytlbi.mongodb.net/?retryWrites=true&w=majority')
 	.then(db=> console.log('Db connected'))
 	.catch(err=> console.log('err'));
 
